@@ -1,0 +1,52 @@
+:root {
+  --pink: #f24b88;
+  --dark-pink: #59253e;
+  --semi-black: #1f1c26;
+  --white: #f2f2f2;
+  --black: #0d0d0d;
+  --dark-blue: #332f3c;
+}
+
+.general-bg {
+  background-color: var(--semi-black);
+  color: var(--white);
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 12px;
+}
+
+.primary__btn {
+  padding: 11px;
+  border-radius: 10px;
+  background-color: var(--pink);
+  text-align: center;
+  display: inline-block;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.primary__btn:hover {
+  background-color: var(--dark-pink);
+  transform: scale(0.98);
+}
+
+.semi-black__btn {
+  border-radius: 10px;
+  background-color: var(--semi-black);
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.semi-black__btn:hover {
+  background-color: var(--black);
+  transform: scale(0.95);
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    max-width: 1168px;
+  }
+}

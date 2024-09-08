@@ -1,0 +1,139 @@
+.hero-wrapper {
+  padding-top: 63px;
+  padding-bottom: 50px;
+}
+
+.hero__img {
+  display: inline-block;
+  width: 100%;
+  height: 283px;
+  overflow: hidden;
+  margin-bottom: 50px;
+  border-radius: 20px;
+}
+
+.hero__img img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.hero__content {
+  text-align: center;
+}
+
+.hero__title {
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 0.215em;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero__title--smaller {
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+}
+.hero__text {
+  font-size: 12px;
+  line-height: 18px;
+  opacity: 0.36;
+  margin-top: 10px;
+  margin-bottom: 54px;
+}
+
+.hero-card {
+  display: none;
+}
+.hero-card__title {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+}
+
+.hero-card__text {
+  font-size: 14px;
+  line-height: 21px;
+  opacity: 0.36;
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+.hero-card__btn {
+  display: flex;
+  column-gap: 13px;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 27px;
+}
+.hero-card__arrow {
+  width: 39px;
+  height: 40px;
+  background-color: var(--pink);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .hero__img {
+    height: 500px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .hero-card {
+    background-color: var(--dark-blue);
+    padding: 30px 26px 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  .hero__img {
+    height: 100%;
+    width: 100%;
+  }
+  .hero-card {
+    display: flex;
+  }
+  .hero-wrapper {
+    display: grid;
+    grid-template-columns: minmax(300px, 422px) 8fr 9fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px 30px;
+  }
+  .hero__content {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 2;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .hero__img {
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 2;
+    margin-bottom: 0;
+  }
+
+  .hero__text {
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .hero__title {
+    font-size: 64px;
+    width: 500px;
+  }
+  .hero__title--smaller {
+    font-size: 29px;
+  }
+  .primary__btn {
+    font-size: 20px;
+    line-height: 30px;
+    padding: 20px 30px;
+    align-self: start;
+  }
+}
