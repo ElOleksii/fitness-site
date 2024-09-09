@@ -46,6 +46,14 @@ a {
   text-decoration: none;
 }
 
+details > summary {
+  list-style: none;
+}
+
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
 :root {
   --pink: #f24b88;
   --dark-pink: #59253e;
@@ -109,7 +117,6 @@ a {
 .logo > img {
   width: 44px;
   height: 36px;
-  margin-top: -10px;
 }
 
 .burger-menu {
